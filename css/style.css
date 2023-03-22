@@ -1,0 +1,65 @@
+*{
+    font-family: 'Amaranth', 'Nunito', sans-serif;
+    
+}
+
+body{
+    border:0px;
+    margin:0;
+    font-size: 24px;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.w-80{
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+/*_____ DEBUT DE LA NAVBAR _____ */
+nav{
+    background-color: #ffffff;
+    border: solid 1px black;
+}
+
+.navbar-flex{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbar-link{
+    margin: 1rem;
+}
+
+.navbar-link:hover{
+    color: #C0D9F7;
+}
+
+/*_____ FIN DE LA NAVBAR _____ */
+
+
+/*_____ DEBUT D CARROUSEL _____ */
+
+.carrousel{
+    background-color: aqua;
+    height: 500px;
+}
+
+/*_____ FIN DU CARROUSEL _____ */
+.logo{
+    width: 200px;
+    height: 200px;
+}
+
+.txt-black{
+    color: black;
+}
+
+.no-decoration{
+    text-decoration: none;
+    list-style-type: none;
+}
+
