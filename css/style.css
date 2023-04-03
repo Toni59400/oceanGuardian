@@ -13,9 +13,26 @@ body{
     width: 100%;
 }
 
+.m-10{
+    margin:  0px 10px;
+}
+
+.m-0{
+    margin: 0px;
+}
+
+.text-center{
+    text-align: center;
+}
+
 .w-80{
     margin-right: 10%;
     margin-left: 10%;
+    width: 80%;
+}
+
+.w-33{
+    width: 32.9%;
 }
 
 /*_____ DEBUT DE LA NAVBAR _____ */
@@ -43,15 +60,59 @@ nav{
 
 /*_____ DEBUT D CARROUSEL _____ */
 
-.carrousel{
-    background-color: aqua;
-    height: 500px;
+.caroussel{
+    border: solid 4px #FFF;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.photo{
+    height: 600px;
+    margin: 0;
+    display: inline-block;
+    background-size: cover;
+}
+
+#g{
+    left: 1rem;
+    opacity: 0.4;
+    transform: rotate(0deg);
+    transition: all 0.3s ease;
+}
+
+.bouton{
+    position: absolute;
+    width: 70px;
+    cursor: pointer;
+    top: 275px;
+}
+
+#d{
+    right: 1rem;
+    opacity: 0.4;
+    transform: rotate(180deg);
+    transition: all 0.3s ease;
+}
+
+#g:hover{
+    transform: scale(1.1);
+    opacity:1;
+}
+
+#d:hover{
+    transform: rotate(180deg) scale(1.1);
+    opacity:1;
+}
+
+#container{
+    height: 600px;
 }
 
 /*_____ FIN DU CARROUSEL _____ */
 .logo{
     width: 200px;
-    height: 200px;
+    height: 80px;
 }
 
 .txt-black{
@@ -62,4 +123,22 @@ nav{
     text-decoration: none;
     list-style-type: none;
 }
+
+
+.block {
+    display: flex;
+    justify-content: space-around
+}
+
+.chiffres_bolder{
+    font-size: 500%;
+    font-weight: bolder;
+}
+
+.texte_bold{
+    font-size: 200%;
+    font-weight:normal;
+}
+
+
 

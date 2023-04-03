@@ -4,25 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>OceanGuardian - Le nettoyeur des Océans</title>
 </head>
 <body class="w-100">
     <nav class="w-80">
         <ul class="navbar-flex">
             <div class="navbar-flex">
-                <li class="no-decoration navbar-link"><a href="./index.html" class="no-decoration txt-black">Accueil</a></li>
+                <li class="no-decoration navbar-link"><a href="index.html" class="no-decoration txt-black">Accueil</a></li>
                 <li class="no-decoration navbar-link"><a href="" class="no-decoration txt-black">Notre Mission</a></li>
                 <li class="no-decoration navbar-link"><a href="" class="no-decoration txt-black">Agir avec nous</a></li>
                 <li class="no-decoration navbar-link"><a href="" class="no-decoration txt-black">Contact</a></li>
             </div>
             <div>
-                <li class="no-decoration"><a href="" class="no-decoration txt-black"><img src="../img/logo.png" alt="logo_entreprise_oceanGuardian" class="logo"></a></li>
+                <li class="no-decoration"><a href="" class="no-decoration txt-black"><img src="./img/logo.png" alt="logo_entreprise_oceanGuardian" class="logo"></a></li>
             </div>
         </ul>
     </nav>
-    <div class="carrousel w-80">
-
+    <div class="caroussel w-80">
+        <div id="container"></div>
+        <img src="img/arrow-left-solid.svg" alt="fleche_gauche" id="g" class="bouton"/>
+        <img src="img/arrow-right-solid.svg" alt="fleche_droite" id="d" class="bouton"/>
     </div>
+    <div class="block w-80">
+        <div class="w-33 m-10 text-center">
+            <p class="chiffres_bolder m-0">17</p>
+            <p class="texte_bold">tonnes de déchets déversées dans les océans chaque minute.</p>
+        </div>
+        <div class="w-33 m-10 text-center">
+            <p class="chiffres_bolder m-0">85%</p>
+            <p class="texte_bold">des déchets de nos océans sont en plastiques</p>
+        </div>
+        <div class="w-33 m-10 text-center">
+            <p class="chiffres_bolder m-0">3800</p>
+            <p class="texte_bold">espèces marines sont déjà impactées</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
