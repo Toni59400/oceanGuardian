@@ -95,13 +95,15 @@ body{
 }
 
 .text-center{
-    text-align: center;
+    text-align: center; 
 }
+
 
 .w-80{
     margin-right: 10%;
     margin-left: 10%;
     width: 80%;
+    
 }
 
 .ai-center{
@@ -118,6 +120,7 @@ body{
 
 .w-30{
     width: 30%;
+    
 }
 
 .fsz200{
@@ -284,3 +287,65 @@ nav{
 
 
 /*_____ FIN DU CARROUSEL _____ */
+
+
+
+/* Ajout des médias queries pour le responsive */
+@media screen and (max-width: 768px) {
+    body {
+      font-size: 16px; 
+    }
+    
+    .bg-bleu-ciel {
+        width: 100%;
+        max-width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-center {
+        word-wrap: break-word; 
+        max-height: 100%;
+        overflow: auto;
+    }
+    
+    .w-80, .w-70, .w-50, .w-30, .w-33, .navbar-link {
+      width: 100%; 
+    }
+    
+    .navbar-flex {
+      flex-direction: column; 
+    }
+    
+    .navbar-link {
+      margin: 0.5rem 0; 
+    }
+    
+    #container {
+      height: auto; 
+    }
+    
+    #photo {
+      height: 400px; 
+    }
+
+    .img-auto {
+        height: 400px;
+        width: auto;
+    }
+
+    .display-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+    
+
+    
+  }
+  
