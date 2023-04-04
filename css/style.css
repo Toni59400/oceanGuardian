@@ -3,6 +3,14 @@
     
 }
 
+.blue{
+    color: #083A75;
+}
+
+.bg-bleu-ciel{
+    background-color : #C0D9F7;
+}
+
 body{
     border:0px;
     margin:0;
@@ -35,10 +43,51 @@ body{
     width: 32.9%;
 }
 
+.fsz200{
+    font-size: 200%;
+}
+
+.fsz500{
+    font-size: 500%;
+}
+
+.fwbolder{
+    font-weight: bolder;
+}
+
+.fwnormal{
+    font-weight:normal;
+}
+.logo{
+    width: 200px;
+    height: 80px;
+}
+
+.txt-black{
+    color: black;
+}
+
+.no-decoration{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+.display-flex{
+    display: flex;
+}
+
+.jc-space-around{
+    justify-content: space-around
+}
+
+.h-200{
+    height: 200px;
+}
+
 /*_____ DEBUT DE LA NAVBAR _____ */
 nav{
     background-color: #ffffff;
-    border: solid 1px black;
 }
 
 .navbar-flex{
@@ -61,30 +110,18 @@ nav{
 /*_____ DEBUT D CARROUSEL _____ */
 
 .caroussel{
-    border: solid 4px #FFF;
     position: relative;
     overflow: hidden;
-    border-radius: 10px;
 }
 
 
-.photo{
-    height: 600px;
+#photo{
+    height: 800px;
     margin: 0;
     display: inline-block;
     background-size: cover;
-    width: 80%;
-    position: absolute;
-    left: 0;
+    width: 100%;
     transition: all 0.5s ease;
-}
-
-.photo:nth-of-type(2){
-    left: 80%;
-}
-
-.photo:nth-of-type(3){
-    left: 160%;
 }
 
 #g{
@@ -120,49 +157,7 @@ nav{
 
 #container {
     height: 600px;
-    animation: carousel 10s infinite linear;
 }
 
-@keyframes carousel {
-    0% { left: 0; }
-    33.33% { left: -100%; }
-    66.66% { left: -200%; }
-    100% { left: 0; }
-}
 
 /*_____ FIN DU CARROUSEL _____ */
-.logo{
-    width: 200px;
-    height: 80px;
-}
-
-.txt-black{
-    color: black;
-}
-
-.no-decoration{
-    text-decoration: none;
-    list-style-type: none;
-}
-
-
-.block {
-    display: flex;
-    justify-content: space-around
-}
-
-.chiffres_bolder{
-    font-size: 500%;
-    font-weight: bolder;
-}
-
-.texte_bold{
-    font-size: 200%;
-    font-weight:normal;
-}
-
-.text-center {
-    font-size: 100%;
-    font-weight: bolder;
-
-}
