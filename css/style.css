@@ -67,11 +67,24 @@ nav{
     border-radius: 10px;
 }
 
+
 .photo{
     height: 600px;
     margin: 0;
     display: inline-block;
     background-size: cover;
+    width: 80%;
+    position: absolute;
+    left: 0;
+    transition: all 0.5s ease;
+}
+
+.photo:nth-of-type(2){
+    left: 80%;
+}
+
+.photo:nth-of-type(3){
+    left: 160%;
 }
 
 #g{
@@ -105,8 +118,16 @@ nav{
     opacity:1;
 }
 
-#container{
+#container {
     height: 600px;
+    animation: carousel 10s infinite linear;
+}
+
+@keyframes carousel {
+    0% { left: 0; }
+    33.33% { left: -100%; }
+    66.66% { left: -200%; }
+    100% { left: 0; }
 }
 
 /*_____ FIN DU CARROUSEL _____ */
@@ -140,5 +161,8 @@ nav{
     font-weight:normal;
 }
 
+.text-center {
+    font-size: 100%;
+    font-weight: bolder;
 
-
+}
