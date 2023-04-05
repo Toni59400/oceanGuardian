@@ -191,7 +191,7 @@ body{
 }
 
 .fsz-48{
-    font-size: 48px;
+    font-size: 35px;
 }
 
 .h-100{
@@ -229,6 +229,12 @@ nav{
 .navbar-link:hover{
     color: #C0D9F7;
 }
+
+.menu-icon {
+    display: none; 
+    cursor: pointer;
+    font-size: 24px;
+  }
 
 /*_____ FIN DE LA NAVBAR _____ */
 
@@ -293,10 +299,10 @@ nav{
 /* Ajout des médias queries pour le responsive */
 @media screen and (max-width: 768px) {
     body {
-      font-size: 16px; 
+      font-size: 14px; 
     }
 
-    .bg-bleu-ciel {
+    .adaption {
         width: 100%;
         max-width: 100%;
         padding: 10px;
@@ -312,7 +318,12 @@ nav{
         overflow: auto;
     }
     
-    .w-80, .w-70, .w-50, .w-30, .w-33, .navbar-link {
+    .w-80 {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .w-70, .w-50, .w-30, .w-33, .navbar-link {
       width: 100%; 
     }
 
@@ -343,16 +354,31 @@ nav{
         width: auto;
     }
 
-    .display-flex {
+    .column {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         
-      }
+    }
 
+    .size-10{
+        width: 20%;
+        height: 10%;
+    }
+
+    #g, #d {
+        display: none;
+    }
+
+    .navbar-flex {
+        display: none;
+    }
     
-
+    .menu-icon {
+        display: block;
+    }
+   
     
   }
   

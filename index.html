@@ -8,8 +8,9 @@
     <title>OceanGuardian - Le nettoyeur des Océans</title>
 </head>
 <body class="w-100">
+    <button class="menu-icon" aria-label="Menu" onclick="toggleMenu()">&#9776</button>
     <nav class="w-80">
-        <ul class="navbar-flex">
+        <ul class="navbar-flex" id="navbar">
             <div class="navbar-flex">
                 <li class="no-decoration navbar-link"><a href="index.html" class="no-decoration txt-black">Accueil</a></li>
                 <li class="no-decoration navbar-link"><a href="" class="no-decoration txt-black">Notre Mission</a></li>
@@ -31,7 +32,7 @@
     <div class="text-center">
         <h1 class="text-center blue fsz200">Nous sommes tous responsables</h1>
     </div>
-    <div class="display-flex jc-space-around w-80">
+    <div class="display-flex column jc-space-around w-80">
         <div class="w-33 m-10 text-center">
             <p class="fsz500 fwbolder m-0">17</p>
             <h2 class="fsz200 fwnormal">tonnes de déchets déversées dans les océans chaque minute.</h2>
@@ -45,9 +46,9 @@
             <h2 class="fsz200 fwnormal">espèces marines sont déjà impactées</h2>
         </div>
     </div>
-    <div class="w-80 bg-bleu-ciel">
+    <div class="w-80 bg-bleu-ciel adaptation">
         <h1 class="mt-20 text-center blue fsz200">Notre mission</h1>
-        <div class="w-80 display-flex ai-center">
+        <div class="w-80 display-flex column ai-center">
             <div class="w-70 p-10"><img class="img-auto" src="./img/bateau.png" alt="Image-prototype-du-bateau"></div>
             <div class="w-30 p-10 fsz-48 txt-black h-100"><p class="text-center">Concevoir une méthode innovante 
                 pour récupérer et traiter les déchets 

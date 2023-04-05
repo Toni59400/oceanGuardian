@@ -75,3 +75,12 @@ nb3.onclick = function(){
     txt2.style.display = "none";
 }
 
+function toggleMenu() {
+    var navbar = document.getElementById("navbar");
+    if (navbar.style.display === "block") {
+      navbar.style.display = "none";
+    } else {
+      navbar.style.display = "block";
+    }
+  }
+  
