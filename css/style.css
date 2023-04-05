@@ -295,7 +295,7 @@ nav{
     body {
       font-size: 16px; 
     }
-    
+
     .bg-bleu-ciel {
         width: 100%;
         max-width: 100%;
@@ -314,6 +314,12 @@ nav{
     
     .w-80, .w-70, .w-50, .w-30, .w-33, .navbar-link {
       width: 100%; 
+    }
+
+   
+    .w-80 img.img-auto {
+        max-width: 100%; 
+        height: auto; 
     }
     
     .navbar-flex {
@@ -342,6 +348,7 @@ nav{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        
       }
 
     
