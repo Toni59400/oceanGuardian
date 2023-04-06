@@ -80,10 +80,12 @@ function toggleMenu() {
     if (navbar.classList.contains("hidden")) {
       navbar.classList.remove("hidden");
       navbar.classList.add("shown");
+      
     } else {
       navbar.classList.remove("shown");
       navbar.classList.add("hidden");
     }
   }
+
   
   
