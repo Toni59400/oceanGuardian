@@ -297,6 +297,7 @@ nav{
 
 
 /* Ajout des médias queries pour le responsive */
+
 @media screen and (max-width: 768px) {
     body {
       font-size: 14px; 
@@ -332,10 +333,26 @@ nav{
         max-width: 100%; 
         height: auto; 
     }
-    
-    .navbar-flex {
-      flex-direction: column; 
+
+    nav.hidden {
+        display: none;
     }
+    
+    nav.shown {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100vh;
+    background-color: white;
+    z-index: 100;
+    overflow-y: auto;
+    flex-direction: column;
+    transition: transform 0.4s ease-out;
+    transform: translateX(-100%);
+    }
+    
+    
     
     .navbar-link {
       margin: 0.5rem 0; 
@@ -343,10 +360,6 @@ nav{
     
     #container {
       height: auto; 
-    }
-    
-    #photo {
-      height: 400px; 
     }
 
     .img-auto {
@@ -363,22 +376,94 @@ nav{
     }
 
     .size-10{
-        width: 20%;
-        height: 10%;
+        width: 11%;
+        height: 8%;
     }
 
     #g, #d {
-        display: none;
-    }
-
-    .navbar-flex {
         display: none;
     }
     
     .menu-icon {
         display: block;
     }
-   
-    
-  }
+}
   
+@media screen and (max-width: 576px) {
+
+    .adaption {
+    padding: 5px;
+    }
+    
+    .w-80 img.img-auto {
+    height: 420px;
+    max-width: 100%;
+    }
+    
+    .img-auto {
+    width: 100%;
+    }
+
+    .size-10{
+    width: 14%;
+    height: 7%;
+    }
+    
+    
+}
+    
+@media screen and (min-width: 992px) {
+    body {
+        font-size: 14px;
+    }
+    .w-70 {
+    width: 70%;
+    }
+    
+    .w-50 {
+    width: 50%;
+    }
+    
+    .w-30 {
+    width: 30%;
+    }
+    
+    .w-33 {
+    width: 33.33%;
+    }
+    
+    .navbar-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    }
+    
+    .navbar-link {
+    margin: 0 1rem;
+    }
+    
+    .menu-icon {
+    display: none;
+    }
+    
+}
+    
+@media screen and (min-width: 1200px) {
+    body {
+    font-size: 16px;
+    }
+    
+    .adaption {
+    padding: 15px;
+    }
+         
+    .img-auto {
+    height: 520px;
+    }
+    
+    .size-10{
+    width: 11%;
+    height: 9%;
+    }
+}

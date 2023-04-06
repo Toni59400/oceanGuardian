@@ -77,10 +77,13 @@ nb3.onclick = function(){
 
 function toggleMenu() {
     var navbar = document.getElementById("navbar");
-    if (navbar.style.display === "block") {
-      navbar.style.display = "none";
+    if (navbar.classList.contains("hidden")) {
+      navbar.classList.remove("hidden");
+      navbar.classList.add("shown");
     } else {
-      navbar.style.display = "block";
+      navbar.classList.remove("shown");
+      navbar.classList.add("hidden");
     }
   }
+  
   
