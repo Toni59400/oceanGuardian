@@ -449,21 +449,3 @@ nav{
     
 }
     
-@media screen and (min-width: 1200px) {
-    body {
-    font-size: 16px;
-    }
-    
-    .adaption {
-    padding: 15px;
-    }
-         
-    .img-auto {
-    height: 520px;
-    }
-    
-    .size-10{
-    width: 11%;
-    height: 9%;
-    }
-}
